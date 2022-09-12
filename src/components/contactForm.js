@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
 import TextField from "../ui/fields/textField";
-import Button from "../ui/buttons/Button";
+import Button from "../ui/buttons/button";
 
 // Credentials for EmailJS
 const emailJSAccessToken = process.env.NEXT_PUBLIC_EMAILJS_ACCESS_TOKEN;
