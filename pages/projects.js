@@ -9,7 +9,7 @@ const projects = [
     id: 1,
     name: "anonymess",
     description: "Real-time anonymouse message board web app",
-    logo: "/msu.png",
+    logo: "a",
     links: [
       {
         link: "https://www.anonymess.app/",
@@ -25,7 +25,7 @@ const projects = [
     id: 2,
     name: "noah networks",
     description: "Personal website and blog",
-    logo: "/msu.png",
+    logo: "nn",
     links: [
       {
         link: "https://www.noahnetworks.com/",
@@ -39,9 +39,9 @@ const projects = [
   },
   {
     id: 3,
-    name: "Renewed Mood",
+    name: "renewed mood",
     description: "Mood and emotion tracking journal moblie app",
-    logo: "/msu.png",
+    logo: "rm",
     links: [
       {
         link: "https://github.com/Milbo-LLC/Renewed-Mood",
@@ -68,14 +68,13 @@ const DisplayProjects = () => {
               className="flex items-center gap-4 p-8"
               onClick={() => router.push(`/projects/${name}`)}
             >
-              <div className="flex w-[50px] h-[50px] bg-white rounded-full p-2">
-                <Image
-                  src={logo}
-                  width="100%"
-                  height="100%"
-                  objectFit="contain"
-                  alt="Project logo"
-                />
+              <div
+                className="flex justify-center w-[50px] h-[50px] rounded-full"
+                style={{ backgroundColor: "rgba(255, 255, 255, 0.25)" }}
+              >
+                <div className="flex w-full justify-center items-center pb-1 text-3xl">
+                  {logo}
+                </div>
               </div>
               <div>
                 <div className="font-bold text-2xl color-">{name}</div>
